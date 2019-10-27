@@ -3,10 +3,10 @@
 LogicEngine::LogicEngine(RenderEngine* renderEngine)
 {
 	this->renderEngine = renderEngine;
-
+	al_install_mouse();
 	al_register_event_source(eventQueue, al_get_display_event_source(this->renderEngine->getDisplay()));
 	al_register_event_source(eventQueue, al_get_timer_event_source(gameLoopTimer));
-
+	al_register_event_source(eventQueue, al_get_mouse_event_source());
 	al_start_timer(gameLoopTimer);
 }
 
@@ -24,6 +24,8 @@ bool LogicEngine::mainLoop()
 	case ALLEGRO_EVENT_TIMER:
 		renderEngine->draw();
 		break;
+	case ALLEGRO_EVENT_MOUSE_BUTTON_DOWN:
+		renderEngine->attack();
 	default:
 		break;
 	}

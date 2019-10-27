@@ -175,17 +175,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bunker_render.cpp" />
+    <ClCompile Include="bunker_logic.cpp" />
     <ClCompile Include="logic_engine.cpp" />
     <ClCompile Include="render_engine.cpp" />
     <ClCompile Include="scartraft-2.cpp" />
+    <ClCompile Include="tower_logic.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bunker_logic.h" />
+    <ClInclude Include="bunker_render.h" />
     <ClInclude Include="logic_engine.h" />
     <ClInclude Include="render_engine.h" />
+    <ClInclude Include="tower_logic.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

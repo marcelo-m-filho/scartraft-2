@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\towers">
+      <UniqueIdentifier>{3a97bc2c-f2d4-4cff-8dc1-b9b90dacedef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\towers">
+      <UniqueIdentifier>{36cdfe99-7b07-48b5-829c-917a596a83be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="scartraft-2.cpp">
@@ -23,6 +29,15 @@
     </ClCompile>
     <ClCompile Include="logic_engine.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bunker_render.cpp">
+      <Filter>Source Files\towers</Filter>
+    </ClCompile>
+    <ClCompile Include="bunker_logic.cpp">
+      <Filter>Source Files\towers</Filter>
+    </ClCompile>
+    <ClCompile Include="tower_logic.cpp">
+      <Filter>Source Files\towers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -37,6 +52,15 @@
     </ClInclude>
     <ClInclude Include="logic_engine.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bunker_render.h">
+      <Filter>Header Files\towers</Filter>
+    </ClInclude>
+    <ClInclude Include="bunker_logic.h">
+      <Filter>Header Files\towers</Filter>
+    </ClInclude>
+    <ClInclude Include="tower_logic.h">
+      <Filter>Header Files\towers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
